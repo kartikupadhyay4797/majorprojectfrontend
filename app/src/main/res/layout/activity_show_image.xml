@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    tools:context=".ShowImage">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/framelayout_in_showimage"
+        android:background="#00ffffff"
+        android:layout_above="@id/linearlayout_in_showimageactivity"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:id="@+id/imageview_in_showimageactivity"
+        android:layout_margin="16dp"
+        />
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:id="@+id/progress_bar_in_showimage"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:background="#00ffffff"
+        android:id="@+id/linearlayout_in_showimageactivity"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_finish_cross"
+            android:clickable="true"
+            android:id="@+id/cancel_show_image_activity"/>
+    </LinearLayout>
+</RelativeLayout>
